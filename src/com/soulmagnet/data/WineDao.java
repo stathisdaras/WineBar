@@ -31,7 +31,7 @@ public class WineDao
 		this.description = description;
 	}
 	public String getImage() {
-		return image;
+		return image + ".jpg";
 	}
 	public void setImage(String image) {
 		this.image = image;
