@@ -1,7 +1,10 @@
 package com.soulmagnet.data;
 
-import java.util.ArrayList;
-
+/**
+ * 
+ * @author sdaras
+ *
+ */
 public class WineDao
 {
 

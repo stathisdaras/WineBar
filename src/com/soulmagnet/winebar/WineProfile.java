@@ -12,8 +12,6 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-import com.soulmagnet.connectivity.DBConnect;
-
 import android.app.Activity;
 import android.content.Intent;
 import android.graphics.Bitmap;
@@ -21,21 +19,18 @@ import android.graphics.BitmapFactory;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
+import android.widget.AdapterView.OnItemClickListener;
 import android.widget.ArrayAdapter;
-import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
-import android.widget.Toast;
-import android.widget.AdapterView.OnItemClickListener;
+
+import com.soulmagnet.connectivity.DBConnect;
 
 public class WineProfile extends Activity
 {
-	
-	
 	public static final String DB_GET_VENDORS = DBConnect.DB_HOST + "/winebar/get_vendors.php";
 	
-
 	@Override
 	protected void onCreate(Bundle savedInstanceState)
 	{
@@ -111,6 +106,7 @@ public class WineProfile extends Activity
 		vendorList.setOnItemClickListener(new OnItemClickListener()
 		{
 
+			@SuppressWarnings("unused")
 			@Override
 			public void onItemClick(AdapterView<?> parent, View view,
 					int position, long id)
